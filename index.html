@@ -3,6 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swaroop Revu Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <style>
+
+    body{background-color:#f6f6f7;}
+    
+    .circle-image{position:absolute;border-radius:50%;width:250px;height:250px;object-fit:cover;top:50%;left:50%;transform:translate(-232.80%,-90.50%);z-index:3}
+    .cer1{position:absolute;object-fit:scale-down;height:250px;width:250px;top:50%;left:50%;transform:translate(-215.90%,155%);z-index:5}
+    .cer2{position:absolute;object-fit:scale-down;height:200px;width:200px;top:50%;left:50%;transform:translate(-95%,210%);z-index:5}
+    .cer3{position:absolute;object-fit:scale-down;height:300px;width:300px;top:50%;left:50%;transform:translate(27%,120%);z-index:6}
+    
+    .header{position:absolute;z-index:2;color:black;margin-top:15px;margin-left:20px;top:50%;left:50%;transform:translate(-165%,-1020%);}
+    .title_name{color:#1e152a;font-weight:bold;font-size:20px;font-family:poppins;}
+    .course{color:#1e152a;font-size:15px;font-family:poppins;margin-left:20px;}
+    .name{position:absolute;color:#645dd7;font-weight:bolder;font-size:40px;font-family:poppins;top:70px;left:350px;top:50%;left:50%;transform:translate(-90%,-400%);} 
+    .details{position:absolute;color:#1e152a;font-weight:bold;font-size:18px;font-family:poppins;left:350px;top:160px;top:50%;left:50%;transform:translate(-195%,-590.50%);}
+    .description{position:absolute;color:#1e152a;font-size:13px;font-family:poppins;left:350px;top:200px;top:50%;left:50%;transform:translate(-51%,-120%);}
+    
+    .circle1 {position:absolute;height:10px;width:10px;background-color:#5ab1bb;border-radius:50%;top:50%;left:50%;transform:translate(3100%,-1360%);}
+    .circle2 {position:absolute;height:10px;width:10px;background-color:#a5c882;border-radius:50%;top:50%;left:50%;transform:translate(3100%,-940%);}
+    .circle3 {position:absolute;height:10px;width:10px;background-color:#f7dd72;border-radius:50%;top:50%;left:50%;transform:translate(3100%,-570%);}
+    .circle4 {position:absolute;height:10px;width:10px;background-color:#A13D63;border-radius:50%;top:50%;left:50%;transform:translate(3100%,-160%);}
+    .circle5 {position:absolute;height:260px;width:260px;background-color:#ffffff;border-radius:50%;box-shadow:5px 5px 5px rgba(30,21,42,0.1);z-index:2;top:50%;left:50%;transform:translate(-225.80%,-89%);}
+    .circle6 {position:absolute;height:270px;width:270px;background-color:#645dd7;border-radius:50%;box-shadow:5px 5px 5px rgba(30,21,42,0.1);z-index:1;top:50%;left:50%;transform:translate(-219.50%,-87.50%);}
+    .circle7 {position:absolute;height:60px;width:60px;background-color:#645dd7;border-radius:50%;box-shadow:5px 5px 5px rgba(30,21,42,0.1);z-index:1;top:50%;left:50%;transform:translate(-930%,1400%);z-index:7}
+    
+    .skill{position:absolute;color:#1e152a;font-family:poppins;font-weight:bold;font-size:30px;top:50%;left:50%;transform:translate(380%,-490%);}
+    .skill1{position:absolute;color:#1e152a;font-size:15px;font-family:poppins;top:50%;left:50%;transform:translate(300%,-630%);}
+    .skill2{position:absolute;color:#1e152a;font-size:15px;font-family:poppins;top:50%;left:50%;transform:translate(220%,-450%);}
+    .skill3{position:absolute;color:#1e152a;font-size:15px;font-family:poppins;top:50%;left:50%;transform:translate(304%,-280%);}
+    .skill4{position:absolute;color:#1e152a;font-size:15px;font-family:poppins;top:50%;left:50%;transform:translate(218%,-100%);}
+    
+    .ed{text-align:center;position:absolute;color:#645dd7;font-family:poppins;font-weight:bold;font-size:30px;top:50%;left:50%;transform:translate(-50%, 50%); }
+    
+    .ed1{position:absolute;color:#1e152a;font-family:poppins;font-weight:bold;font-size:25px;top:50%;left:50%;transform:translate(-157%,390%);}
+    .ed2{position:absolute;color:#1e152a;font-family:poppins;font-size:20px;top:50%;left:50%;transform:translate(-155%,600%);}
+    .year1{position:absolute;color:#a9a9a9;font-family:poppins;font-size:18px;top:50%;left:50%;transform:translate(-265%,850%);}
+    
+    .ed3{position:absolute;color:#1e152a;font-family:poppins;font-weight:bold;font-size:25px;top:50%;left:50%;transform:translate(20%,390%);}
+    .ed4{position:absolute;color:#1e152a;font-family:poppins;font-size:20px;top:50%;left:50%;transform:translate(17.5%,600%);}
+    .year2{position:absolute;color:#a9a9a9;font-family:poppins;font-size:18px;top:50%;left:50%;transform:translate(57%,850%);}
+    
+    .rectangle1{position:absolute;top:50%;left:50%;height:150px;width:550px;background-color:rgb(255, 255, 255);box-shadow:5px 5px 5px rgba(30,21,42,0.1);border-radius:15px;transform:translate(2%,85%);}
+    .rectangle2{position:absolute;top:50%;left:50%;height:150px;width:550px;background-color:rgb(255, 255, 255);box-shadow:5px 5px 5px rgba(30,21,42,0.1);border-radius:15px;transform:translate(-102%,85%);}
+    .rectangle3{position:absolute;top:50%;left:50%;height:300px;width:300px;background-color:rgb(255, 255, 255);box-shadow:5px 5px 5px rgba(30,21,42,0.1);border-radius:15px;transform:translate(-188%,135%);}
+    .rectangle4{position:absolute;top:50%;left:50%;height:300px;width:300px;background-color:rgb(255, 255, 255);box-shadow:5px 5px 5px rgba(30,21,42,0.1);border-radius:15px;transform:translate(-80%,135%);}
+    .rectangle5{position:absolute;top:50%;left:50%;height:300px;width:300px;background-color:rgb(255, 255, 255);box-shadow:5px 5px 5px rgba(30,21,42,0.1);border-radius:15px;transform:translate(27%,135%);}
+    
+    .line1{position:absolute;top:50%;left:50%;height:2px;width:550px;width:1124px;background-color:#645dd7;transform:translate(-50%,5300%);}
+    .line2{position:absolute;top:50%;left:50%;height:2px;width:550px;width:1124px;background-color:#645dd7;transform:translate(-50%,18800%);}
+    .line3{position:absolute;top:50%;left:50%;height:2px;width:550px;width:1124px;background-color:#645dd7;transform:translate(-50%,40400%);}
+    
+    .cer{text-align:center;position:relative;color:#645dd7;font-size:30px;font-family:poppins;font-weight:bold;top:50%;left:50%;transform:translate(-50%, 520%);}
+    .cerf1{position:absolute;color:#1e152a;font-family:poppins;font-size:18px;top:50%;left:50%;transform:translate(-223%,1140%);text-align:center;font-weight:bold;}
+    .cerf2{position:absolute;color:#1e152a;font-family:poppins;font-size:18px;top:50%;left:50%;transform:translate(-83.80%,1140%);text-align:center;font-weight:bold;}
+    .cerf3{position:absolute;color:#1e152a;font-family:poppins;font-size:18px;top:50%;left:50%;transform:translate(40%,1140%);text-align:center;font-weight:bold;}
+    
+    .con{text-align:center;position:relative;color:#645dd7;font-size:30px;font-family:poppins;font-weight:bold;top:50%;left:50%;transform:translate(-50%,1300%);}
+    .mail{position:absolute;color:#1e152a;font-family:poppins;font-size:18px;top:50%;left:50%;transform:translate(-195%,3195%);font-weight:bold;}
+    .icon1{position:absolute;object-fit:scale-down;height:40px;width:40px;top:50%;left:50%;transform:translate(-1370%,2125%);z-index:8}
+    
+    </style>
+</head>
+
+<body>
 
 <div class="circle1"></div>
 <div class="circle2"></div>
@@ -63,65 +128,7 @@
 
 <p class="con">Contact Me</p>
 <a class="mail" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new" target="_blank">swarooprevu@gmail.com</a>
-<style>
 
-body{background-color:#f6f6f7;}
+</body>
 
-.circle-image{position:absolute;border-radius:50%;width:250px;height:250px;object-fit:cover;top:50%;left:50%;transform:translate(-232.80%,-90.50%);z-index:3}
-.cer1{position:absolute;object-fit:scale-down;height:250px;width:250px;top:50%;left:50%;transform:translate(-215.90%,155%);z-index:5}
-.cer2{position:absolute;object-fit:scale-down;height:200px;width:200px;top:50%;left:50%;transform:translate(-95%,210%);z-index:5}
-.cer3{position:absolute;object-fit:scale-down;height:300px;width:300px;top:50%;left:50%;transform:translate(27%,120%);z-index:6}
-
-.header{position:absolute;z-index:2;color:black;margin-top:15px;margin-left:20px;top:50%;left:50%;transform:translate(-165%,-1020%);}
-.title_name{color:#1e152a;font-weight:bold;font-size:20px;font-family:poppins;}
-.course{color:#1e152a;font-size:15px;font-family:poppins;margin-left:20px;}
-.name{position:absolute;color:#645dd7;font-weight:bolder;font-size:40px;font-family:poppins;top:70px;left:350px;top:50%;left:50%;transform:translate(-90%,-400%);} 
-.details{position:absolute;color:#1e152a;font-weight:bold;font-size:18px;font-family:poppins;left:350px;top:160px;top:50%;left:50%;transform:translate(-195%,-590.50%);}
-.description{position:absolute;color:#1e152a;font-size:13px;font-family:poppins;left:350px;top:200px;top:50%;left:50%;transform:translate(-51%,-120%);}
-
-.circle1 {position:absolute;height:10px;width:10px;background-color:#5ab1bb;border-radius:50%;top:50%;left:50%;transform:translate(3100%,-1360%);}
-.circle2 {position:absolute;height:10px;width:10px;background-color:#a5c882;border-radius:50%;top:50%;left:50%;transform:translate(3100%,-940%);}
-.circle3 {position:absolute;height:10px;width:10px;background-color:#f7dd72;border-radius:50%;top:50%;left:50%;transform:translate(3100%,-570%);}
-.circle4 {position:absolute;height:10px;width:10px;background-color:#A13D63;border-radius:50%;top:50%;left:50%;transform:translate(3100%,-160%);}
-.circle5 {position:absolute;height:260px;width:260px;background-color:#ffffff;border-radius:50%;box-shadow:5px 5px 5px rgba(30,21,42,0.1);z-index:2;top:50%;left:50%;transform:translate(-225.80%,-89%);}
-.circle6 {position:absolute;height:270px;width:270px;background-color:#645dd7;border-radius:50%;box-shadow:5px 5px 5px rgba(30,21,42,0.1);z-index:1;top:50%;left:50%;transform:translate(-219.50%,-87.50%);}
-.circle7 {position:absolute;height:60px;width:60px;background-color:#645dd7;border-radius:50%;box-shadow:5px 5px 5px rgba(30,21,42,0.1);z-index:1;top:50%;left:50%;transform:translate(-930%,1400%);z-index:7}
-
-.skill{position:absolute;color:#1e152a;font-family:poppins;font-weight:bold;font-size:30px;top:50%;left:50%;transform:translate(380%,-490%);}
-.skill1{position:absolute;color:#1e152a;font-size:15px;font-family:poppins;top:50%;left:50%;transform:translate(300%,-630%);}
-.skill2{position:absolute;color:#1e152a;font-size:15px;font-family:poppins;top:50%;left:50%;transform:translate(220%,-450%);}
-.skill3{position:absolute;color:#1e152a;font-size:15px;font-family:poppins;top:50%;left:50%;transform:translate(304%,-280%);}
-.skill4{position:absolute;color:#1e152a;font-size:15px;font-family:poppins;top:50%;left:50%;transform:translate(218%,-100%);}
-
-.ed{text-align:center;position:absolute;color:#645dd7;font-family:poppins;font-weight:bold;font-size:30px;top:50%;left:50%;transform:translate(-50%, 50%); }
-
-.ed1{position:absolute;color:#1e152a;font-family:poppins;font-weight:bold;font-size:25px;top:50%;left:50%;transform:translate(-157%,390%);}
-.ed2{position:absolute;color:#1e152a;font-family:poppins;font-size:20px;top:50%;left:50%;transform:translate(-155%,600%);}
-.year1{position:absolute;color:#a9a9a9;font-family:poppins;font-size:18px;top:50%;left:50%;transform:translate(-265%,850%);}
-
-.ed3{position:absolute;color:#1e152a;font-family:poppins;font-weight:bold;font-size:25px;top:50%;left:50%;transform:translate(20%,390%);}
-.ed4{position:absolute;color:#1e152a;font-family:poppins;font-size:20px;top:50%;left:50%;transform:translate(17.5%,600%);}
-.year2{position:absolute;color:#a9a9a9;font-family:poppins;font-size:18px;top:50%;left:50%;transform:translate(57%,850%);}
-
-.rectangle1{position:absolute;top:50%;left:50%;height:150px;width:550px;background-color:rgb(255, 255, 255);box-shadow:5px 5px 5px rgba(30,21,42,0.1);border-radius:15px;transform:translate(2%,85%);}
-.rectangle2{position:absolute;top:50%;left:50%;height:150px;width:550px;background-color:rgb(255, 255, 255);box-shadow:5px 5px 5px rgba(30,21,42,0.1);border-radius:15px;transform:translate(-102%,85%);}
-.rectangle3{position:absolute;top:50%;left:50%;height:300px;width:300px;background-color:rgb(255, 255, 255);box-shadow:5px 5px 5px rgba(30,21,42,0.1);border-radius:15px;transform:translate(-188%,135%);}
-.rectangle4{position:absolute;top:50%;left:50%;height:300px;width:300px;background-color:rgb(255, 255, 255);box-shadow:5px 5px 5px rgba(30,21,42,0.1);border-radius:15px;transform:translate(-80%,135%);}
-.rectangle5{position:absolute;top:50%;left:50%;height:300px;width:300px;background-color:rgb(255, 255, 255);box-shadow:5px 5px 5px rgba(30,21,42,0.1);border-radius:15px;transform:translate(27%,135%);}
-
-.line1{position:absolute;top:50%;left:50%;height:2px;width:550px;width:1124px;background-color:#645dd7;transform:translate(-50%,5300%);}
-.line2{position:absolute;top:50%;left:50%;height:2px;width:550px;width:1124px;background-color:#645dd7;transform:translate(-50%,18800%);}
-.line3{position:absolute;top:50%;left:50%;height:2px;width:550px;width:1124px;background-color:#645dd7;transform:translate(-50%,40400%);}
-
-.cer{text-align:center;position:relative;color:#645dd7;font-size:30px;font-family:poppins;font-weight:bold;top:50%;left:50%;transform:translate(-50%, 520%);}
-.cerf1{position:absolute;color:#1e152a;font-family:poppins;font-size:18px;top:50%;left:50%;transform:translate(-223%,1140%);text-align:center;font-weight:bold;}
-.cerf2{position:absolute;color:#1e152a;font-family:poppins;font-size:18px;top:50%;left:50%;transform:translate(-83.80%,1140%);text-align:center;font-weight:bold;}
-.cerf3{position:absolute;color:#1e152a;font-family:poppins;font-size:18px;top:50%;left:50%;transform:translate(40%,1140%);text-align:center;font-weight:bold;}
-
-.con{text-align:center;position:relative;color:#645dd7;font-size:30px;font-family:poppins;font-weight:bold;top:50%;left:50%;transform:translate(-50%,1300%);}
-.mail{position:absolute;color:#1e152a;font-family:poppins;font-size:18px;top:50%;left:50%;transform:translate(-195%,3195%);font-weight:bold;}
-.icon1{position:absolute;object-fit:scale-down;height:40px;width:40px;top:50%;left:50%;transform:translate(-1370%,2125%);z-index:8}
-
-</style>
-         
-</head>
+</html>
